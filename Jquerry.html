@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $(".FirstBtn_hide").click(function(){
+    $(".First").hide();
+    $(".FirstBtn_hide").hide();
+    $(".FirstBtn_show").show();
+  });
+});
+
+$(document).ready(function(){
+  $(".SecondBtn_hide").click(function(){
+    $(".second").hide();
+    $(".SecondBtn_hide").hide();
+    $(".SecondBtn_show").show();
+  });
+});
+
+$(document).ready(function(){
+  $(".FirstBtn_show").click(function(){
+    $(".First").show();
+    $(".FirstBtn_hide").show();
+    $(".FirstBtn_show").hide();
+  });
+});
+
+$(document).ready(function(){
+  $(".SecondBtn_show").click(function(){
+    $(".second").show();
+    $(".SecondBtn_hide").show();
+    $(".SecondBtn_show").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<div class="First">
+<p>This is a paragraph.</p>
+</div>
+
+<div class="second">
+<p>This is another paragraph.</p> 
+</div>
+
+
+<button class="FirstBtn_hide">Click me to hide first line</button><br> <br>
+<button class="SecondBtn_hide">Click me to hide second line</button><br> <br>
+<button class="FirstBtn_show">Click me to show first line</button> <br> <br>
+<button class="SecondBtn_show">Click me to show second line</button>
+</body>
+</html>
